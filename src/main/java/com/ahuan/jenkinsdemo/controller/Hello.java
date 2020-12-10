@@ -1,5 +1,6 @@
 package com.ahuan.jenkinsdemo.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @Email a1875884755@gmail.com
  * @Version 1.0
  */
-@RestController("/hello")
+@Controller
+@RequestMapping("/hello")
 public class Hello {
 
     @RequestMapping(value = "/oo",method = RequestMethod.GET)
