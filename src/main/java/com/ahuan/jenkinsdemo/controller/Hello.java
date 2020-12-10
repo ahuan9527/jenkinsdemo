@@ -23,4 +23,10 @@ public class Hello {
     public String hello(){
         return "你好啊，我是HELLO WORLD!";
     }
+
+    @RequestMapping(value = "/xx",method = RequestMethod.GET)
+    @ResponseBody
+    public String world() {
+        return "世界太大我想去流浪！";
+    }
 }
